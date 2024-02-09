@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpService } from '../../http.service';
+import { HttpService } from '../../services/http.service';
 import { map } from 'rxjs/operators';
 import { FoodData, Food } from '../../models';
 import { NutrientComponent } from '../nutrient/nutrient.component';

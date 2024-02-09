@@ -7,7 +7,7 @@ describe('NutrientComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NutrientComponent ]
+      declarations: [  ]
     })
     .compileComponents();
 

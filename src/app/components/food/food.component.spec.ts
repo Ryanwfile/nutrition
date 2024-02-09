@@ -5,7 +5,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { FormsModule } from '@angular/forms';
 import { FoodComponent } from './food.component';
-import { HttpService } from '../../http.service';
+import { HttpService } from '../../services/http.service';
 
 describe('FoodComponent', () => {
   let component: FoodComponent;
@@ -13,7 +13,7 @@ describe('FoodComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FoodComponent ],
+      declarations: [ ],
       imports: [HttpClientTestingModule],
       providers: [HttpService],
       schemas: [NO_ERRORS_SCHEMA]   

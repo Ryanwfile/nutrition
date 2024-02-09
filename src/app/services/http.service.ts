@@ -16,7 +16,7 @@ export class HttpService {
   constructor(private http: HttpClient) { }
 
   getFood(queryString: string) {
-    return this.http.get('https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=Cheddar%20Cheese');
+    return this.http.get('https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=' + queryString);
     // if(queryString !== undefined && queryString !== '' && queryString !== null){
     //   return this.http.get(this.url + queryString);
     // }

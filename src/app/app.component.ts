@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { FoodComponent } from './components/food/food.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { HeaderComponent } from './components/header/header.component';
 // import { Form } from '@angular/forms';
 
 //import forms
 
 @Component({
   standalone: true,
-  imports: [FoodComponent],
+  imports: [FoodComponent, MatSlideToggleModule, HeaderComponent ],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

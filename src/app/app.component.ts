@@ -1,13 +1,45 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FoodComponent } from './components/food/food.component';
+// import { Form } from '@angular/forms';
+
+//import forms
 
 @Component({
-  selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [FoodComponent],
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nutrition';
+  //strings need better validation
+  title = 'nutrition-app';
+  calorieAmount = 0;
+  exerciseAmount = 0;
+  gender = '';
+  currentCalories = 0;
+  currentExcercise = 0;
+  dailyGoalAmount = 0;
+  dailyGoalsComplete = false;
+  age = 0;
+  setCalorieAmount(amount: number) {
+    this.currentCalories = amount;
+  }
+
+  setExerciseAmount(amount: number) {
+    this.exerciseAmount = amount;
+  }
+
+  setGender(gender: string) {
+    this.gender = gender;
+    console.log(this.gender);
+  }
+
+  setAge(age: number) {
+    this.age = age;
+  }
+
+  setDailyAmount(goalAmount: number){
+    this.dailyGoalAmount = goalAmount;
+  }
 }

@@ -52,15 +52,4 @@ export class FoodComponent {
       
     })    
   }
-  // setQueryToSearch(query: string) {
-  //   this.queryToSearch = query;
-  //   // console.log("testing");
-  //   this.fetchFood();
-  //   // console.log(this.queryToSearch);
-  // }
-
-  // ngOnInit(){
-  //   this.fetchFood();
-  // }
-
 }

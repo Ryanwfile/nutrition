@@ -1,26 +1,22 @@
-// @use 'sass:map';
 // @use '@angular/material' as mat;
 
-// @mixin color($theme) {
-//   .app-wrap {
-//     // Read the 500 hue from the primary color palette.
-//     color: mat.get-theme-color($theme, primary, 500);
-//   }
-// }
+// @include mat.core();
 
-// @mixin typography($theme) {
-//   .app-button {
-//     // Get the headline font from the theme.
-//     font: mat.get-theme-typography($theme, headline-1);
-//   }
-// }
+// $my-primary: mat.define-palette(mat.$indigo-palette, 500);
+// $my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
-// @mixin theme($theme) {
-//   @if mat.theme-has($theme, color) {
-//     @include color($theme);
-//   }
+// $my-theme: mat.define-light-theme((
+//  color: (
+//    primary: $my-primary,
+//    accent: $my-accent,
+//  ),
+//  density: 0,
+// ));
 
-//   @if mat.theme-has($theme, typography) {
-//     @include typography($theme);
-//   }
-// }
+// // Emit theme-dependent styles for common features used across multiple components.
+// @include mat.core-theme($my-theme);
+
+// // Emit styles for MatButton based on `$my-theme`. Because the configuration
+// // passed to `define-light-theme` omits typography, `button-theme` will not
+// // emit any typography styles.
+// @include mat.button-theme($my-theme);

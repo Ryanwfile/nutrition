@@ -25,7 +25,7 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('nutrition-app');
   });
 
-  fit('should render title', () => {
+  it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;

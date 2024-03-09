@@ -19,8 +19,14 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     FoodComponent, 
     MatButtonModule, 
-    MatIconModule, MatDividerModule, FormsModule, MatSlideToggleModule, MatSlideToggle, ButtonOverviewExample, MatCardModule ],
-  selector: 'app-root',
+    MatIconModule, 
+    MatDividerModule, 
+    FormsModule, 
+    MatSlideToggleModule, 
+    MatSlideToggle, 
+    ButtonOverviewExample, 
+    MatCardModule ],
+  selector: 'app-root',  
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

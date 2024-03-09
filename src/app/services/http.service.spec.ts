@@ -9,8 +9,8 @@ describe('HttpService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ ],
-      imports: [ ],
+      declarations: [],
+      imports: [],
       providers: [ HttpClient, HttpHandler ],
       schemas: []   
     });

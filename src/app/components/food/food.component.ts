@@ -39,6 +39,7 @@ export class FoodComponent {
     this.httpService.getFood(this.queryToSearch)
     ?.pipe(
       map((responseData) => {
+        console.log(responseData);
         const responseAsArray = Object.values(responseData);
         this.currentFoodObject.totalHits = responseAsArray[0];
         this.currentFoodObject.currentPage = responseAsArray[1];

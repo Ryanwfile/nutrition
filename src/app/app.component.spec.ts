@@ -8,7 +8,7 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       imports: [  ],
       declarations: [ ],
-      providers: [HttpClient, HttpHandler],
+      // providers: [HttpClient, HttpHandler ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ]   
     }).compileComponents();
   });
@@ -25,11 +25,16 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('nutrition-app');
   });
 
+  it('get request should work', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    
+  })
+
   // it('should render title', () => {
   //   const fixture = TestBed.createComponent(AppComponent);
   //   fixture.detectChanges();
   //   const compiled = fixture.nativeElement as HTMLElement;
-  //   const spanSelect = compiled.querySelector('span');
+  //   // const spanSelect = compiled.querySelector('span');
   //   expect(compiled.querySelector('span')?.textContent).toContain('nutrition-app');
   // });
 });
